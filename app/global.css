@@ -1,0 +1,83 @@
+.animated-text {
+    opacity: 1;
+    animation: SlideInfromRight 5000ms ease;
+    /* animation:  10000ms ease forwards; */
+}
+
+@keyframes collapse {
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-caption {
+    animation: SlideInfromRight 500ms ease-in;
+}
+
+@keyframes SlideInfromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+.nav-link{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.cardimg {
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+}
+
+.cardimg:hover {
+    transform: scale(1.2);
+}
+
+.dropdown-toggle {
+    color: #000;
+}
+
+.dropdown-toggle:hover {
+    color: #000;
+}
+
+.dropdown-toggle::after {
+    color: #000;
+}
+
+.nav {
+    backdrop-filter: blur(19px);
+}
+
+.animated-caption{
+    bottom: 100%;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none !important;
+}
+
+.slide::-webkit-scrollbar{
+    display: none !important;
+}
+
+.carousel-inner::-webkit-scrollbar{
+    display: none !important;
+}
+
+.caro-item::-webkit-scrollbar{
+    display: none !important;
+    scroll-snap-type: mandatory;
+}   
